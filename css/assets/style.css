@@ -2,268 +2,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Dosis&family=Poppins:wght@300&display=swap');
 
 /* Box sizing rules */
-*,
-*::before,
-*::after {
+* {
+  margin:0;
+  padding:0;
   box-sizing: border-box;
 }
+/*global styles */
 
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed 
-ul[role='list'],
-ol[role='list'] {
-  list-style: none;
-}
-
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-/* Set core body defaults */
 body {
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  background-image:url("css/assets/images/woman_stressed_hero_image.jpeg");
+};
+
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  background-image:url("/workspace/Skillshare/css/assets/images/woman_stressed_hero_image1.jpeg");
 }
 
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-/* Make images easier to work with 
-img,
-picture {
-  max-width: 100%;
-  display: block;
-}
-
-/* Inherit fonts for inputs and buttons 
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-   scroll-behavior: auto;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-body, html {
-    height: 100%;
-    margin:0;
-}
-
-header a {
-    text-decoration: none;
-  }
-  
-  header {
-    background-image: linear-gradient(
-      130deg,
-      hsl(331, 100%, 93%) 0%,
-      hsl(32, 93%, 95%) 8%,
-      hsl(302, 93%, 95%) 14%,
-      hsl(330, 100%, 97%) 20%,
-      hsl(324deg 39% 92%) 25%,
-      hsl(308deg 28% 96%) 29%,
-      hsl(240deg 43% 99%) 34%,
-      hsl(240deg 43% 99%) 38%,
-      hsl(240deg 43% 99%) 41%,
-      hsl(240deg 43% 99%) 45%,
-      hsl(240deg 43% 100%) 49%,
-      hsl(240deg 43% 100%) 52%,
-      hsl(0deg 48% 99%) 56%,
-      hsl(0deg 48% 97%) 59%,
-      hsl(0deg 49% 94%) 63%,
-      hsl(0deg 49% 92%) 67%,
-      hsl(0, 63%, 95%) 70%,
-      hsl(0, 100%, 95%) 74%,
-      hsl(3, 75%, 94%) 78%,
-      hsl(5, 100%, 91%) 82%,
-      hsl(8, 100%, 91%) 87%,
-      hsl(339, 68%, 89%) 91%,
-      hsl(341, 76%, 94%) 95%,
-      hsl(311, 60%, 93%) 100%
-    );
-    padding: 0 20px;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  #skillshare {
-    font-weight: 800px;
-    font-size: 1.3rem;
-    font-family: "cabin", serif;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-  }
-  
-  #skillshare a {
-    color: rgb(104, 19, 88);
-  }
-  
-  ul {
-    list-style: none;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  
-  ul a {
-    color: darkslategray;
-  }
-  
-  ul li {
-    padding: 15px;
-    margin-left: 10px;
-  }
-  
-  ul li:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
-  }
-  
-  #contact-cta {
-    border-radius: 5px;
-    padding: 5px 8px;
-    border: 1px solid rgb(125, 178, 133);
-  }
-  
-  #contact-cta a {
-    color:darkcyan;
-  }
-  
-  #hamburger-icon {
-    margin: auto 0;
-    display: none;
-    cursor: pointer;
-  }
-  
-  #hamburger-icon div {
-    width: 35px;
-    height: 3px;
-    background-color:darkslategray;
-    margin:6px 0;
-    transition: 0.4s;
-  }
-  
-  .open .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-    transform: rotate(-45deg) translate(-6px, 6px);
-  }
-  
-  .open .bar2 {
-    opacity: 0;
-  }
-  
-  .open .bar3 {
-    -webkit-transform: rotate (45deg) translate (-6px, -8px);
-    transform: rotate (45deg) translate (-6px, -8px);
-  
-  }
-  
-  .open .mobile-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  
-  .mobile-menu {
-    display: none;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    height: calc(100vh - 50px);
-    width: 100%;
-    padding-top:15px;
-  }
-  
-  .mobile-menu li {
-    margin-bottom: 15px;
-  }
-  
-  @media only screen and (max-width: 600px) {
-    header nav {
-      display: 
-      none;
-    }
-  
-    #hamburger-icon {
-      display: block;
-    }
-  }
-  
-  .container {
-    max-width:100rem;
-    margin-inline: auto;
-    padding-inline: 1 rem;
-  
-  }
-  
-  .gallery-grid {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr
-  }
-
-
-.hero-image {
-   display:flex;
-   background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/images/business-concept-with-team-close-up1.jpg");
-   opacity:60%;
-   min-height:30rem;
-   align-self:center; 
-    background-size:cover;
-   background-repeat:no-repeat;
-   align-items:center;
-   justify-content:center;
-   position:relative;
-   margin-top:5px;
-   margin-bottom:15px;
-   
-}
 .hero-text {
-    font-family: "poppins", 'serif';
-    font-weight:600px;
-    font-size: 1.5rem;
-    text-align:center;
-    position:absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding-bottom: 20px;
+  font-size: 1.2rem;
+  text-align:center;
+  color:white;
+}
+
+/* Header styling */
+
+  header a:link {
+  background-color: #fcd5ce;
+  text-decoration:none;
+  }
+
+.skill-swap {
+  display:flex;
+  text-align: center;
+  background-color:rgb(255, 255, 255);
+}
+  .header-nav {
+    height:60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family:'cabin';
+    font-size:2rem;
+    background-color:#ffb5a7;
+}
+ul a:link{}
+.nav-bar {
+   background-color:#f8edeb;
+    letter-spacing: 0.2;
+    padding-top: 0.5rem;
+    padding-bottom: 0.7rem;
+    font-family: 'poppins';
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.nav-bar {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+    flex: 1 0 10%;
+    text-align: center;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    font-weight: 500;
 
 }
+.header-nav a,
+.skill-swap a,
+.nav-bar a {
+
+    display: block;
+    text-decoration: none;
+    letter-spacing: 0.1;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.nav-bar a:hover{
+color: black;
+}
+/* visited link *
+a:visited {
+  color: rgb(26, 0, 128);
+} */
+
+/* mouse over link */
+nav-bar a:hover {
+  color: #ffb5a7;
+}
+
+/* selected link */
+a:active {
+  backgroundb(0, 0, 0);
+} 
+
+
 .cta-wrapper {
     display:flex;
     flex-wrap:wrap;
@@ -297,6 +143,7 @@ flex-wrap: wrap;
 justify-content:center;
 margin:20px;
 }
+
 .card {
     background:bisque;
     width:270px;
@@ -323,21 +170,61 @@ margin:20px;
   }
   
   .card-bg2{
-    background-image: url('./images/friends.png');
+    background-image: url('./images/home/friends.png');
   }
   
   .card-bg3 {
-    background-image: url('./images/events.png');
+    background-image: url('./images/home/events.png')
   }
   
   .card p {
     padding:5px;
   }
   
-  .card h3 {
+  .card h3 { 
     padding:5px;
   }
 
+  .
+  .container
+  {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  .hero-card {
+    background:rgb(53, 32, 6);
+    width:270px;
+    margin-left:15px;
+    margin-right: 15px;
+    margin-bottom:15px;
+    border-radius: 15px;
+    text-align: center;
+  
+  }
+  
+  .hero-card-image {
+    background-color:darksalmon;
+    height: 200px;
+    margin-bottom:15px;
+    border-radius: 15px 15px 0 0;
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+  
+  }
+  .hero-card-bg {
+    background-image: url("./images/business-concept-with-team-close-up1.jpg");}
+
+  .hero-card p {
+      padding:2rem;
+    }
+    
+    .hero-card h2 { 
+      padding:5px;
+    }
+/*
   .testimonials{
     display:flex;
     text-align: center;
@@ -427,7 +314,7 @@ margin:20px;
   background-color: #ffc;
 }
 
-/*Hides scrollbar in firefox*/
+/*Hides scrollbar in firefox*
 .slides {
   scrollbar-width: none;
 }

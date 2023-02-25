@@ -15,41 +15,89 @@
 </head>
 
   <body>
-    <header>
+    <span class="header-nav" h1 class="skill-swap"><a href="index.html">Skill Swap</a></h1>
+    </span>
+  
+  <!--Navbar-->
+  <nav>
+    <ul class="nav-bar">
+                     <li class="menu"><a href="index.html">Home</a></li>
+                      <li class="menu"><a href="services.html">Services</a></li>
+                    <li class="menu"><a href="contact.html">Contact</a></li>
+                  </ul> 
+                  </nav>
+                  </header>
+    
 
-      <!-- Company Logo-->
-      <div id="skillshare"><a href="index.html">Skill.Share</a></div>
-      <!--Nav bar-->
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="events.html">Events</a></li>
-         
-          <li id="contact-cta"><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <!-- Mobile hamburger icon-->
-      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-        <ul class="mobile-menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services">services</a></li>
-          <li><a href="events.html">Events</a></li>
+<main>
+<section class="container">
+  <div class="hero-card">
+    <div class="hero-card-image hero-card-bg">
+      
+      <h2>Struggling for work?</h2>
+      <p>We can help</p>
+      <p><button class="btn cta"><a href="services.html">Learn more</a></button></p>
+    </div>
+</div></div>
+</section>
+  </div>
+   
+  <!--Hero image and flex container-->
 
-       <!--Contact CTA-->
-          <li id="contact-cta"><a href="contact.html">Contact</a></li>
-        </ul>
+ 
+  
       </div>
-    </header>
-    <main>
-      <!--Hero image and flex container-->
+      </main>
+  
+
+
+      <div class="container-how">
+        <div class="flex-split">
+          <h2>How can we help?</h2>
+        </div>
+      </div>
+<section class="container">              
+
+    <div class="card">
+    <div class="card-image card-bg1"></div>
+      
+            <h3>Mentor Pairing</h3>
+      
+            <p>We pair you with someone who acts as a guide; creating a plan of action and your 'go-to' for any advice.</p>
+        </div>
+
+        <div class="card">
+        <div class="card-image card-bg2"></div>
+       
+            <h3>Community</h3>
+        
+       
+            <p> place to make friends! Members offer their time to help train others and share knowledge about upcoming positions. A way to get a foot in the door. Its a positive environment of reciprocity</p>
+          </div>
+    
+
+<div class="card">
+<div class="card-image card-bg3"></div>
+<h3>Careers Events</h3>
+
+<p> We have guest speakers, recruiters, motivational speakers and sucess stories from people who have benefited from being a member in the past</p>
+        </div>
+
+    
+        </section>
+      
+    
+
+<!-- <section class="about">
+  <div class="row">
+  <div clas="box-left">
+    <h2></h2>
+  </div>
+      <!--Hero image and flex container--
      
         <div class="hero-image">
   <div class="hero-text">Need help finding work?</div>
-    <!--CTA on hero image to find out more-->
+    <!--CTA on hero image to find out more--
     <div class="cta-wrapper">
       <button class="cta-learnmore"><a href="services.html">Learn more</a></button>
       </div>
@@ -103,7 +151,7 @@
       </div>
 </section>
       <body>
-        <!--<div class="testimonials"><h2> tabindex="0">Client Testimonials</h2>
+        <!-div class="testimonials"><h2> tabindex="0">Client Testimonials</h2>
         <h3 class="testimonials" tabindex="0">What People are Saying</h3>
         <section tabindex="0" aria-label="carousel" class="carousel">
           <section tabindex="0" aria-label="client testimonials" class="slides">
@@ -174,8 +222,7 @@
             >
           </section>
         </section>
-  !-->
-      </section>
+  !--
       <footer>
         <div class="footer-container">
                 <h4>Stay updated</h4>
@@ -183,7 +230,7 @@
 
                  <form class="subscribe">
               
-                  <input type="email" name="email" aria-describedby="emailHelp" placeholder="Example@e-mail.com">
+                  <input type="email" name="email" aria-describedby="emailHelp" placeholder="Example@e-mail.com" required>
                   <input type="submit" value="subscribe">
                 </form>
               
@@ -199,7 +246,5 @@
 <h6>Disclaimer: this is a fictional service in partial fulfilment of a project portfolio for a Diploma in Full Stack Software Development at the Code Institute</p>
 </div>
 </footer>
-
-    <script src="index.js"></script>
   </body>
 </html>
