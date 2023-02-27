@@ -1,5 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Dosis&family=Poppins:wght@300&display=swap');
+/*Google Fonts external import link*/
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@600&family=Montserrat:wght@900&family=Raleway:wght@400;900&display=swap');;
 
 /* Box sizing rules */
 * {
@@ -9,16 +10,10 @@
 }
 /*global styles */
 
-body {
-  background-image:url("css/assets/images/woman_stressed_hero_image.jpeg");
-};
-
-
-.hero {
-  display: flex;
-  flex-direction: column;
-  background-image:url("/workspace/Skillshare/css/assets/images/woman_stressed_hero_image1.jpeg");
+span.header-nav {
+  font-family:"Montserrat", 
 }
+
 
 .hero-text {
   font-size: 1.2rem;
@@ -32,14 +27,8 @@ body {
   background-color: #fcd5ce;
   text-decoration:none;
   }
-
-.skill-swap {
-  display:flex;
-  text-align: center;
-  background-color:rgb(255, 255, 255);
-}
   .header-nav {
-    height:60px;
+    height:80px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -47,21 +36,40 @@ body {
     overflow: hidden;
     font-family:'cabin';
     font-size:2rem;
-    background-color:#ffb5a7;
+    background-color:#af9d99;
 }
-ul a:link{}
-.nav-bar {
-   background-color:#f8edeb;
+  #logo {
+    height:60px;
+    width:60px;
+    margin-right: 15px;
+
+  }
+
+. img#logo .skill-swap {
+  display:flex;
+}
+
+.skill-swap {
+  text-align: center;
+  font-family:'cabin','serif';
+  font-color:rgb(14, 14, 0);
+}
+
+
+/*Nav bar*/ 
+/*ul a:link{}*//* /* */
+.flex-column {
+   background-color:#b31f0b;
     letter-spacing: 0.2;
     padding-top: 0.5rem;
     padding-bottom: 0.7rem;
-    font-family: 'poppins';
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: 600px;
     text-transform: uppercase;
+  overflow:hidden;
 }
 
-.nav-bar {
+.flex-column {
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
@@ -70,7 +78,7 @@ ul a:link{}
     margin: 0;
 }
 
-.menu {
+.column.menu {
     flex: 1 0 10%;
     text-align: center;
     margin-top: 0.6rem;
@@ -80,7 +88,7 @@ ul a:link{}
 }
 .header-nav a,
 .skill-swap a,
-.nav-bar a {
+.flex-column a {
 
     display: block;
     text-decoration: none;
@@ -91,45 +99,29 @@ ul a:link{}
 
 
 
-.nav-bar a:hover{
+.flex-column a:hover{
 color: black;
 }
-/* visited link *
-a:visited {
-  color: rgb(26, 0, 128);
-} */
-
 /* mouse over link */
-nav-bar a:hover {
-  color: #ffb5a7;
+.flex-column a:hover {
+  color: #72706f;
 }
 
-/* selected link */
+/* selected link *
 a:active {
   backgroundb(0, 0, 0);
-} 
+}  *
+*/
 
 
-.cta-wrapper {
-    display:flex;
-    flex-wrap:wrap;
-    text-align:center;
+img#founder {
+ display:block;
+ margin-left:auto;
+ margin-right:auto;
+ width:50%;
+ height:200px;
+  border-radius:35%;
 }
-
-.cta-learnmore {
-    text-align: center;
-    align-items:center;
-    border-radius:5px;
-    border-color: rgb(75, 139, 10);
-    background-color:rgb(75, 139, 10);
-    padding: 5px;
-    font-size:1rem;
-    top:50%;
-    left:50%;
-    margin-top: 100px;
-}
-
-
 .container
 {
   display:flex;
@@ -137,13 +129,13 @@ a:active {
   justify-content: center;
   
 }
-.flex-split {
+/*.flex-split {
 display:flex;
 flex-wrap: wrap;
 justify-content:center;
 margin:20px;
 }
-
+*/
 .card {
     background:bisque;
     width:270px;
@@ -185,45 +177,40 @@ margin:20px;
     padding:5px;
   }
 
-  .
-  .container
-  {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  
+
     
-  }
-  .hero-card {
-    background:rgb(53, 32, 6);
-    width:270px;
-    margin-left:15px;
-    margin-right: 15px;
-    margin-bottom:15px;
-    border-radius: 15px;
-    text-align: center;
+
   
-  }
-  
-  .hero-card-image {
-    background-color:darksalmon;
-    height: 200px;
-    margin-bottom:15px;
-    border-radius: 15px 15px 0 0;
+  .hero {
+    background-image:url("./images/business-concept-with-team-close-up1.jpg");
+    max-width: 100%;
+    height:400px;
     background-size: contain;
     background-repeat:no-repeat;
     background-position: center;
   
   }
-  .hero-card-bg {
-    background-image: url("./images/business-concept-with-team-close-up1.jpg");}
 
-  .hero-card p {
+  .hero p {
       padding:2rem;
     }
     
-    .hero-card h2 { 
+    .hero h2 { 
       padding:5px;
     }
+
+.flex-row-container {
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  width:100%;
+}
+  
+.flex-row {
+  flex: 25%;
+}
+
 /*
   .testimonials{
     display:flex;
