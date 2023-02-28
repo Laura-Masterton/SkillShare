@@ -212,11 +212,11 @@ a:active {
   }
   
   .card-bg2{
-    background-image: url('assets/images/friends.png');
+    background-image: url("assets/images/friends.png");
   }
   
   .card-bg3 {
-    background-image: url('/assets/images/events.png');
+    background-image: url("assets/images/events.png");
   }
   
   .card p {
@@ -256,55 +256,24 @@ a:active {
 }
 
 /* Contact form */
-/* FLEX CONTAINER*/
-
-
-.flex-wrapper li button {
-  margin-left: auto;
-  padding: 8px 16px;
-  border: none;
-  background: #333;
-  color: #f2f2f2;
-  text-transform: uppercase;
-  letter-spacing: .09em;
-  border-radius: 2px;
-}
-
 .form-container {
-  width:80%;
-  max-width:1200px;
-  margin: 0 auto;
-}
-.flex-wrapper,
-.flex-inner-wrap {
-  list-style-type:none;
-  padding:0;
-}
-
-.flex-wrapper {
-  max-width: 800px;
-  margin:0 auto;
-}
-
-.flex-wrapper li
-.flex-inner-wrap {
   display:flex;
   flex-wrap:wrap;
-  align-items:center;
-
-}
-.flex-inner-wrap {
-  padding:0 8px;
-  justify-content: space-between;
-
+  max-width:80vw;
+  text-align:center;
+  justify-content: center;
+  background-size:contain;
+  overflow:none;
 }
 
-.flex-wrapper > li:not(:last child) {
-  margin-bottom:20px;
+input#name,input#surname,input#email,input#phone,
+input#message {
+  margin-bottom:15px;
+  width:50%;
+
 }
 
-.flex-wrapper li label,
-.flex-wrapper li p {
-  padding:0;
-  letter-spacing:0.2rem;
+section, form
+textarea {
+  resize: none;
 }
