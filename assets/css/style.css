@@ -2,6 +2,7 @@
 /*Google Fonts external import link*/
 @import url('https://fonts.googleapis.com/css2?family=Biryani:wght@600&family=Montserrat:wght@900&family=Raleway:wght@400;900&display=swap');;
 
+/*Resetting browser page defaults*/
 *,
 *::before,
 *::after {
@@ -13,6 +14,7 @@ html,body {
   margin:0;
   padding:0;
 }
+
 
 
 /*global styles */
@@ -130,6 +132,14 @@ a:active {
   height:500px;
   background-size:contain;
 }
+  .center-hero {
+  display:flex;
+  background-image:url("assets/images/woman_stressed_hero_image2.jpeg");
+  max-width: 100%;
+  background-size: cover;
+  background-repeat:no-repeat;
+
+}
 
 .center p {
     padding:2rem;
@@ -141,7 +151,7 @@ a:active {
   }
 #home-center {
   display:block;
-
+  max-width:80vw;
 }
 
 .center {
@@ -198,11 +208,11 @@ a:active {
   
   }
   .card-bg1 {
-    background-image: url("/assets/images/mentor.png");
+    background-image: url("assets/images/mentor.png");
   }
   
   .card-bg2{
-    background-image: url('/assets/images/friends.png');
+    background-image: url('assets/images/friends.png');
   }
   
   .card-bg3 {
