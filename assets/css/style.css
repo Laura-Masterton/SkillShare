@@ -221,7 +221,7 @@ a:active {
   #hero {
     background-image:url("/assets/images/woman_stressed_hero_image1.jpeg");
     max-width:100%;
-    background-size: cover;
+    background-size: contain;
     background-repeat:no-repeat;
     background-position: center;
   
