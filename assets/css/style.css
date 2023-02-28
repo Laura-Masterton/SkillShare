@@ -257,27 +257,54 @@ a:active {
 
 /* Contact form */
 /* FLEX CONTAINER*/
-#contact-us {
-  height:100%;
-  display:flex;
-  justify-content: center;
-  align-items:center;
-  overflow:scroll;
-}
-/* Flex item set to fit screen width and max-width for larger screens*/
-.contact-form {
-  flex:1;
-  max-width:600px;
-  background-color: blueviolet;
-  border-radius:10px;
-  border: 1px solid #999;
+
+
+.flex-wrapper li button {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
 }
 
-.form-header {
-padding:15px 0;
-border-bottom:1px;
+.form-container {
+  width:80%;
+  max-width:1200px;
+  margin: 0 auto;
 }
-.form-header h2 {
-  font-size: 1.25 rem;
-  text-align:center;
+.flex-wrapper,
+.flex-inner-wrap {
+  list-style-type:none;
+  padding:0;
+}
+
+.flex-wrapper {
+  max-width: 800px;
+  margin:0 auto;
+}
+
+.flex-wrapper li
+.flex-inner-wrap {
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+
+}
+.flex-inner-wrap {
+  padding:0 8px;
+  justify-content: space-between;
+
+}
+
+.flex-wrapper > li:not(:last child) {
+  margin-bottom:20px;
+}
+
+.flex-wrapper li label,
+.flex-wrapper li p {
+  padding:0;
+  letter-spacing:0.2rem;
 }
