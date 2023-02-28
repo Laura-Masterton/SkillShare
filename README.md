@@ -3,68 +3,38 @@
 
 The Skill Share website is a responsive website, allowing users to visit on a range of mobile phone sizes, tables and desktops. The purpose is to find out information about the Skill Share service.
 
-[View the live project here.] ().
+Skill Share is a service aimed at helping individuals who have gaps in their CV re-enter the workforce. The service allows career coaching, CV proofreading and speakers from different sectors. Individuals are paired with a mentor to guide them, and service users meet to 'skill share' . Common examples include a younger individual receiving training in Microsoft Excel from an experienced professional in return for training in social media management. 
+Existing and potential users can view upcoming career events. These events are educational and aim to help individuals understand the job market and potentially new career paths.
 
 
-#<img src="">
 
+
+[View the live project here.] ()
+
+
+<img src="">
+
+- - - 
 ## User Experience (UX)
+
 #
 
- ### User Stories
-  #### First Time Visitor Goals
+### Purpose for the website
 
- 
- - #### Returning Visitor Goals 
- - #### Frequent User Goals 
-
- ## Features
-
- 
-
-### Future Features
-
- - ### Design
-  - #### Typography
-   - #### Colour Scheme
-   - #### Imagery 
-   *   ### Wireframes
-
-    -   Home Page Wireframe - [View](https://github.com/)
-
-    -   Mobile Wireframe - [View](https://github.com/)
-
-    -   Contact Us Page Wireframe - [View](https://github.com/)
-
-
-
-
-
-
-## Wireframes
-
-## Technology 
-
-## Testing 
-
-
-
-Skill Share is a service aimed at helping individuals who have been out of work gain employment. Individuals are paired with a mentor to guide them and service users meet to 'skill share'. It is a community focused approach.
-Existing and potential users can view upcoming career events. These events are educational and aim to help individuals understand the job market.
-
-**Key information for the site**
-
-* Informing potential users of the service.
-*Explaining how the service came to exist.
+* A way to informing potential users of the service.
 * A way for potential users to get an understanding of how the service works.
+* Explaining how the service came to exist.
 * The ability to view past and upcoming events.
 * A way for people to locate the physical location of the service
 * Providing methods of contact (social media and contact form).
 
-### User Stories
+ **User Stories**
 
 #### Client Goals
-* To have a responsive website that can be viewed on a range of devices.
+* To have a responsive website 
+- Viewed easily on mobile devices, tablets and laptops/desktops
+- Responsive when changing the size of a browser window
+* Fast loading website. 
 * A clear outline of the service.
 * A way to see upcoming events
 * Provide plenty of opportunities to make contact through social media.
@@ -81,15 +51,47 @@ Existing and potential users can view upcoming career events. These events are e
 * I want to be able to navigate the site easily
 *I want to be able to connect with the service through social media
 
+ 
+ - #### Frequent User Goals 
+
+ ## Features
+
+ 
+
+### Future Features
+
+   *   ### Wireframes
+
+    -   Home Page Wireframe - [View](https://github.com/)
+
+    -   Mobile Wireframe - [View](https://github.com/)
+
+    -   Contact Us Page Wireframe - [View](https://github.com/)
+
+
+
+
+
+
+## Wireframes
+#
+## Technology 
+#
+## Testing 
+#
+
+
+
+
 
 ## Design
 
 ### Colour Scheme.
-* The Colour palette was generated using the [Coolors] website. [ Palette link ]
-https://coolors.co/121619-2d4739-09814a-bcb382-e5c687
+The colour scheme used [Coolors] to generate a colour palette. 
+![Coolors-palette](documentation/Skill_Swap_Coolors_palette.png)
 
 ### Typography
-The website uses three fonts from Google Fonts fonts.google.com. The fonts are embedded using an @import url generated on the Google Fonts website.  Each font has a back-up in case the assigned font does not load.
+The website used [Font Joy](https://fontjoy.com/) to pair complimentary fonts to ensure headings were eye-catching and the body text was clear and easy to read. The three fonts are from [Google Fonts](https://fonts.google.com). The fonts are embedded using an @import url generated on the Google Fonts website.  Each font has a back-up in case the assigned font does not load.
 ```
 font-family: 'Biryani', sans-serif;
 font-family: 'Montserrat', sans-serif;
@@ -103,13 +105,23 @@ Royalty free stock images were used for the hero image and for the photo gallery
 Wireframes were created for mobile, tablet and desktop
 ## Features
 
-The website is comprised of four pages, three of which are accessible from the navigation menu (home page, books page & contact us page). The fourth page is a thank you page which is shown once a user submits the form on the contact us page.
+There are five pages in total. The interactive part of the website is comprised of three pages all of which are accessible from the navigation menu:
+
+1.Home
+2.Events
+3.Contact.
+
+There remaining pages are to acknowledge a user action.
+
+4. Confirmation of subscribing to a newsletter
+5. A thank you message when a user sends an enquiry using the contact form. 
 
 * All Pages on the website have:
-
-  * A responsive navigation bar. There is a 'Home', 'Events', and 'Contact' menu link.
-  The navigation bar grows to fit different screen sizes, mainting the even spacing.  This prevents the screen being cluttered and provides a good user experience. This method is ideal for a navugation menu with only 3 links, but it also futureproofs the website for one or two additional menu items to allow a pleasing aesthetic. 
-* A footer which contains social media icon links to facebook, instagram and twitter. It also provides another link to contact. Font awesome icons were used to promote familiarity as they are instantly recognisable. It presents uncluttered and tidy whilst still filling the space on larger screens.
+  * A header section which shows the 'Skill Share' title.
+  * A responsive navigation bar. There are links to 'Home', 'Events', and 'Contact' pages.
+  The navigation bar grows to fit different screen sizes, maintaining even spacing.  This prevents the screen being cluttered and provides a good user experience. This method is ideal for a navigation menu with only three links, .This  also allows an element of futureproofing, as the navigation bar will still look neat if another menu item is required. It can be adjusted with padding/margin without changing the layout of the page.
+  * All pages pertaining to the website will not open a new browser window as per common practice. The user can navigate back to the website easily if referred to the acknowledgement/thank you pages.
+* A footer which contains social media links to facebook, instagram and twitter. It also provides another link to the contact page. Social media links will open in a new browser window Font awesome icons were used to promote familiarity as they are instantly recognisable. It presents as uncluttered and tidy whilst still filling the space on larger screens.
 
 ### Testing
 
@@ -183,23 +195,30 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
  **Raleway**
  - Initially designed by Matt McInerney, it was expanded into a 9 weight family by Pablo Impallari and Rodrigo Fuenzalida in 2012 and iKerned by Igino Marini. A thorough review and italic was added in 2016.  For more information click [here][Google Fonts Raleway Information].
 
-
-
 **Montserrat**
 
 - Designed by Julieta Ulanovsky, Sol Matas, Juan Pablo del Peral, Jacques Le Bailly. The Montserrat project is led by Julieta Ulanovsky, a type designer based in Buenos Aires, Argentina. For more information click [here][Google Fonts Montserrat Information].
 
 **Biryani**
 - Designed by Dan Reynolds and Mathieu Réguer. The Biryani project is led by Dan Reynolds, a type designer based in Berlin, Germany. For more information click [here][Google Fonts Biryani Information].
+
+
 ### Code
 
 ### Acknowledgements
 
--   My Mentor for continuous helpful feedback.
+-   Everyone at Student Care for their unwavering support through a difficult time. 
 
--   Tutor support at Code Institute for their support.
+-   My mentor, Rohit for his valuable guidance and ability to inspire. 
+
+-  My partner, who is helping me fund this course, supporting me through a challenging time and for believing in my abilities.
+
+ - In honor of my late mother, who would have been thrilled to know I was on this course. 
+
+
 
 [Open Font License]: https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
 [Google Fonts Raleway Information]: https://fonts.google.com/specimen/Raleway/about?query=raleway
 [Google Fonts Montserrat Information]: https://fonts.google.com/specimen/Montserrat/about
 [Google Fonts Biryani Information]: https://fonts.google.com/specimen/Biryani/about?query=biry
+[Coolors-palette]: https://coolors.co/

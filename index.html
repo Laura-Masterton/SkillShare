@@ -12,20 +12,21 @@
      <!-- Font Awesome Script -->
      <script src="https://kit.fontawesome.com/175b4fbc96.js" crossorigin="anonymous"></script>
       <!-- link to my CSS stylesheet-->
-    <link rel="stylesheet" href="css/assets/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
   <body>
-    <span class="header-nav">
+    <header>
+          <span class="flex">
       
-     <a href="index.html"> <img id="logo" src="css/assets/images/skillswap_logo.png"></a><a href="index.html"> <h1 class="skill-swap"> Skill Swap</h1></a>
+     <a href="index.html"> <h1 class="skill-share"> Skill Share</h1></a>
     </span>
 
   <!--Navbar-->
   <nav>
     <ul class="flex-column">
                      <li class="column menu"><a href="index.html">Home</a></li>
-                      <li class="column menu"><a href="services.html">Services</a></li>
+                      <li class="column menu"><a href="events.html">Events</a></li>
                     <li class="column menu"><a href="contact.html">Contact</a></li>
                   </ul> 
                   </nav>
@@ -33,47 +34,54 @@
     
 
 <main> <!--Hero image-->
-<section>
-<div class="hero">
-    <div class="hero-text">
-      
+<section id="hero">
+<div class="container">
+   <div class="center">
       <h2>Struggling for work?</h2>
       <p>We can help</p>
-      <p><button class="btn cta"><a href="services.html">Learn more</a></button></p>
+      <button class="cta-btn"><a href="services.html">Learn more</a></button>
+      </p>
     </div>
+</div>
 </div>
 </section>
       </main>
   
-      <section> 
-        
-  <span class="header-nav" h2 class="About"> About Us </h2> </span>
-  <div class="flex-row-container">
-<div class="flex-row">
-        <img id="founder" src="./css/assets/images/Jess_profile_photo.jpeg" alt="Jess Smyth, founder of Skill Share, sat at an office desk"></div>
-  
-         
-          <div class="flex-row"> 
-            My name is Jess Smyth.  I founded Skill Share in 2017 after struggling to find work.
-            I didn't think twice about stepping away from my career whilst I raised a family. 
-            I definitely didn't consider whether it would affect future job prospects.</div>
-            <div class="flex-row">
-            I found a temporary job when my when my daughter started pre-school.
-            I didn't find another for over a year.
-           I wondered how many others were still stuck?</div>
-            <div class="flex-row">
+      <section>        
+  <div class="container-text">
+    <h2 class="center" id="about">About us</h2>
+    <div class="center">
+      <img src="/assets/images/Jess_profile_photo.jpeg" alt="Jess Smyth, founder of Skill Share, sat at an office desk">
+  </div>
+    <div class="split">
+        <p> My name is Jess Smyth.  I founded Skill Share in 2017 after struggling to find work.
+          I didn't think twice about stepping away from my career whilst I raised a family. 
+          I definitely didn't consider whether it would affect future job prospects.
+        </p>
+      </div>
+      <div>
+      <p>
+        I found a temporary job when my when my daughter started pre-school.
+        I didn't find another for over a year.
+        I wondered how many others were still stuck? 
+      </p>
+        </div>
+            <div>
+              <p>
               I wanted to help - so I Started Skill Share, volunteering my spare time when I could. 
               It is now my full-time job with several support staff. 
               Skill Share is a free service for anyone who has gaps
-               in their employment and is struggling to find work. 
+               in their employment and is struggling to find work. </p>
+            </div>
             </div>
             </div>
   
       </section>
-      <span class="header-nav" h2 class="services"> Services </h2> </span>
+      <div class="container" >
+        <h2 class="center" id="services"> Services </h2> </div>
 
 
-<section class="container">              
+      <section class="container">              
 
     <div class="card">
     <div class="card-image card-bg1"></div>
@@ -104,7 +112,8 @@
         </section>
       
     
-
+</body>
+</html>
     
 
  

@@ -126,17 +126,12 @@ a:active {
   justify-content: center;
   
 }
-.hero {
-  display:flex;
-  background-image:url("/assets/images/woman_stressed_hero_image2.jpeg");
-  max-width: 100%;
-min-height:600px;
-  background-size: cover;
-  background-repeat:no-repeat;
-
+#hero.container {
+  height:500px;
+  background-size:contain;
 }
 
-.hero p {
+.center p {
     padding:2rem;
   }
   
@@ -144,15 +139,35 @@ min-height:600px;
     padding:5px;
     color:#160f29;
   }
+#home-center {
+  display:block;
 
-img#founder {
- display:block;
- margin-left:auto;
- margin-right:auto;
- width:50%;
- height:200px;
-  border-radius:35%;
 }
+
+.center {
+  text-align:center;
+}
+.container-text {
+  margin-inline:auto;
+  width:min(90%, 70rem);
+}
+.split{
+  display:flex;
+  flex-direction:column;
+}
+
+@media (min-width 40rem) {
+  .split {
+    flex-direction:row;}    
+  }
+  .split > * {
+    flex-basis: 100%;
+}
+.split > * + * {
+  margin-left: 2rem;
+}
+
+
 .container
 {
   display:flex;
@@ -183,15 +198,15 @@ img#founder {
   
   }
   .card-bg1 {
-    background-image: url('assets/images/mentor.png');
+    background-image: url("/assets/images/mentor.png");
   }
   
   .card-bg2{
-    background-image: url('assets/images/friends.png');
+    background-image: url('/assets/images/friends.png');
   }
   
   .card-bg3 {
-    background-image: url('assets/images/events.png')
+    background-image: url('/assets/images/events.png');
   }
   
   .card p {
@@ -202,16 +217,11 @@ img#founder {
     padding:5px;
   }
 
-  
 
-    
-
-  
-  .hero {
-    background-image:url("./images/business-concept-with-team-close-up1.jpg");
-    max-width: 100%;
-    height:400px;
-    background-size: contain;
+  #hero {
+    background-image:url("/assets/images/woman_stressed_hero_image1.jpeg");
+    max-width:100%;
+    background-size: cover;
     background-repeat:no-repeat;
     background-position: center;
   
@@ -227,7 +237,6 @@ img#founder {
 
 .flex-row-container {
   display:flex;
-  flex-direction: row;
   flex-wrap:wrap;
   width:100%;
 }
