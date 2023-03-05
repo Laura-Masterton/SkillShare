@@ -80,8 +80,8 @@ a:active {
     align-items: center;
     font-size: 1rem;
     overflow:hidden;
-    margin:0;
-    padding:0;
+    margin:0 25px 0 25px;
+    padding: 0 15px 0px 15px;
 }
 ul.flex-column {
   padding: 0;
@@ -134,7 +134,7 @@ a:active {
 }
   .center-hero {
   display:flex;
-  background-image:url("assets/images/woman_stressed_hero_image2.jpeg");
+  background-image:url('assets/images/woman_stressed_hero_image2.jpeg');
   max-width: 100%;
   background-size: cover;
   background-repeat:no-repeat;
@@ -159,73 +159,34 @@ a:active {
 }
 .container-text {
   margin-inline:auto;
-  width:min(90%, 70rem);
+  width:min(80%, 70rem);
 }
 .split{
   display:flex;
   flex-direction:column;
 }
 
-@media (min-width 40rem) {
+@media (min-width: 40rem) {
   .split {
     flex-direction:row;}    
   }
-  .split > * {
+  .split img {
+    max-width:100%;
+  }
+  .split > p {
     flex-basis: 100%;
 }
-.split > * + * {
+.split > p  {
   margin-left: 2rem;
 }
 
-
-.container
-{
-  display:flex;
+.container {
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
-}
 
-.card {
-    background:bisque;
-    width:270px;
-    margin-left:15px;
-    margin-right: 15px;
-    margin-bottom:15px;
-    border-radius: 15px;
-    text-align: center;
-  
-  }
-  
-  .card-image {
-    background-color:darksalmon;
-    height: 200px;
-    margin-bottom:15px;
-    border-radius: 15px 15px 0 0;
-    background-size: contain;
-    background-repeat:no-repeat;
-    background-position: center;
-  
-  }
-  .card-bg1 {
-    background-image: url("assets/images/mentor.png");
-  }
-  
-  .card-bg2{
-    background-image: url("assets/images/friends.png");
-  }
-  
-  .card-bg3 {
-    background-image: url("assets/images/events.png");
-  }
-  
-  .card p {
-    padding:5px;
-  }
-  
-  .card h3 { 
-    padding:5px;
-  }
+
+}
 
 
   #hero {
@@ -254,6 +215,68 @@ a:active {
 .flex-row {
   flex: 25%;
 }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 250px;
+  border-radius:  15px 15px 0 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+
+
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+
+
+}
+
+.card-image {
+  border-radius: 15px 13px 0 0;
+  background-color:#368f8b;
+  opacity:50%;
+  height: 200px;
+  margin-bottom: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.card-bg1 {
+  background-image: url("assets/images/mentor.png/");
+}
+
+.card-bg2 {
+  background-image: url('./images/friends.png');
+}
+
+.card-bg3 {
+  background-image: url('./images/events.png');
+}
+
+.card p {
+  padding: 15px;
+  font-color:#160f29;
+}
+
+.card h3 {
+  padding: 5px;
+}
+
 
 /*footer*/
 
