@@ -85,7 +85,7 @@ a:active {
 }
 ul.flex-column {
   padding: 0;
-  gap:2.5px;
+  gap:1rem;
 }
 .column.menu {
     flex: auto;
@@ -253,6 +253,32 @@ a:active {
   
 .flex-row {
   flex: 25%;
+}
+
+/*footer*/
+
+footer,ul {
+  list-style: none;
+}
+ul.footer-social-list {
+  list-style-type: none;
+}
+.social {
+  padding: 0 1.8rem 1.25rem;
+}
+
+.social-icons {
+  display:flex;
+  justify-content:center;
+  padding-top:1.25rem;
+}
+.social-icons li {
+  margin: 1 rem;
+}
+
+.footer-bottom {
+  padding: 0.9rem;
+  background-color:rgb(22, 16, 7);
 }
 
 /* Contact form */
