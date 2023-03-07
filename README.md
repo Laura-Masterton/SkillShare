@@ -92,9 +92,10 @@ The colour scheme used [Coolors] to generate a colour palette.
 
 ### Typography
 The website used [Font Joy](https://fontjoy.com/) to pair complimentary fonts to ensure headings were eye-catching and the body text was clear and easy to read. The three fonts are from [Google Fonts](https://fonts.google.com). The fonts are embedded using an @import url generated on the Google Fonts website.  Each font has a back-up in case the assigned font does not load.
+The final fonts were the second generated fonts by font joy. The initial fonts generated were pleasant on a larger screen and looked legible when testing with chrome developer tools but when using a handset the fonts did not appear as clear. Please see 
 ```
-font-family: 'Biryani', sans-serif;
-font-family: 'Montserrat', sans-serif;
+font-family: 'Cabin', sans-serif;
+font-family: 'Nunito sans', sans-serif;
 font-family: 'Raleway', sans-serif;
 ```
  Please see (#credits) for further information on individual font designers and licensing. 
@@ -124,6 +125,9 @@ There remaining pages are to acknowledge a user action.
 * A footer which contains social media links to facebook, instagram and twitter. It also provides another link to the contact page. Social media links will open in a new browser window Font awesome icons were used to promote familiarity as they are instantly recognisable. It presents as uncluttered and tidy whilst still filling the space on larger screens.
 
 ### Testing
+
+Visual testing on a galaxy s20 handset proved that two of the initial fonts, Montserrat and Biryanni to be difficult to read. Viewer feedback confirmed and so these fonts were replaced with 
+
 
 ### Bugs
 
@@ -195,12 +199,16 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
  **Raleway**
  - Initially designed by Matt McInerney, it was expanded into a 9 weight family by Pablo Impallari and Rodrigo Fuenzalida in 2012 and iKerned by Igino Marini. A thorough review and italic was added in 2016.  For more information click [here][Google Fonts Raleway Information].
 
-**Montserrat**
 
-- Designed by Julieta Ulanovsky, Sol Matas, Juan Pablo del Peral, Jacques Le Bailly. The Montserrat project is led by Julieta Ulanovsky, a type designer based in Buenos Aires, Argentina. For more information click [here][Google Fonts Montserrat Information].
+**Nunito Sans**
 
-**Biryani**
-- Designed by Dan Reynolds and Mathieu Réguer. The Biryani project is led by Dan Reynolds, a type designer based in Berlin, Germany. For more information click [here][Google Fonts Biryani Information].
+- Nunito is a well balanced sans serif typeface superfamily, with 2 versions: The project began with Nunito, created by Vernon Adams as a rounded terminal sans serif for display typography. Jacques Le Bailly extended it to a full set of weights. For more information click [here][Google Fonts Nunito Sans Information] 
+
+**Cabin**
+Designed by Impallari Type, Rodrigo Fuenzalida.Cabin is a humanist sans inspired by Edward Johnston's and Eric Gill's typefaces, with a touch of modernism. Cabin incorporates modern proportions, optical adjustments, and some elements of the geometric sans
+- For more information click [here][Google Fonts Cabin Information]
+
+
 
 
 ### Code
@@ -219,6 +227,6 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 [Open Font License]: https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
 [Google Fonts Raleway Information]: https://fonts.google.com/specimen/Raleway/about?query=raleway
-[Google Fonts Montserrat Information]: https://fonts.google.com/specimen/Montserrat/about
-[Google Fonts Biryani Information]: https://fonts.google.com/specimen/Biryani/about?query=biry
 [Coolors-palette]: https://coolors.co/
+[Google Fonts Nunito Sans Information]: https://fonts.google.com/specimen/Nunito+Sans/about?query=nunito
+[Google Fonts Cabin Information]: https://fonts.google.com/specimen/Cabin/about?query=cabin
